@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/app/ATSWebAPI/.vs
+/app/ATSWebAPI/ATSWebAPI/bin/Debug/net6.0
+/app/ATSWebAPI/ATSWebAPI/obj
