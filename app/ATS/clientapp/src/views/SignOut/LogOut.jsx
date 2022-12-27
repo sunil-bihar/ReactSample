@@ -4,7 +4,7 @@ import LoginLayout from 'components/Layout/LoginLayout';
 export default function SignOut() {
     return (
         <>
-            <LoginLayout>
+            <LoginLayout title="SignOut Page">
                 <h1>
                     SignOut Page
                 </h1>

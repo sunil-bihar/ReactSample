@@ -4,7 +4,7 @@ import PrimaryLayout from 'components/Layout/PrimaryLayout';
 export default function Home() {
     return (
         <>
-            <PrimaryLayout>
+            <PrimaryLayout title="Home Page">
                 <h1>
                     Home Page
                 </h1>

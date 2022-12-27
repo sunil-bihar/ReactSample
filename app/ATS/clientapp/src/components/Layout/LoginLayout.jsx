@@ -1,7 +1,12 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PrimaryFooter from "components/Layout/PrimaryFooter";
+import PropTypes  from "prop-types";
 
 export default function LoginLayout(props) {
+    useEffect(() => {
+        document.title = props.title;
+    }, []);
+
     return (
         <>
             <h2>Welcome to ATS</h2>
@@ -10,3 +15,7 @@ export default function LoginLayout(props) {
         </>
     )
 };
+
+LoginLayout.defaultProps = {
+    title: "Login Layout"
+}

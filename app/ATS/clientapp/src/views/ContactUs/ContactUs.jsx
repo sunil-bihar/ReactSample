@@ -4,7 +4,7 @@ import SecondaryLayout from 'components/Layout/SecondaryLayout';
 export default function ContactUs() {
     return (
         <>
-            <SecondaryLayout>
+            <SecondaryLayout title="Contact Page">
                 <h1>
                     ContactUs Page
                 </h1>

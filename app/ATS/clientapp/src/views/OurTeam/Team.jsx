@@ -4,7 +4,7 @@ import SecondaryLayout from 'components/Layout/SecondaryLayout';
 export default function OurTeam() {
     return (
         <>
-            <SecondaryLayout>
+            <SecondaryLayout title="Team Page">
                 <h1>
                     OurTeam Page
                 </h1>
