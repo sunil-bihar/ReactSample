@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ATSWebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class Home : ControllerBase
@@ -10,11 +12,12 @@ namespace ATSWebAPI.Controllers
         [HttpGet]
         public object GetHome()
         {
+            var UserMSID = HttpContext.User.Identity?.Name?.Replace("MS\\", "");
             HomeML home = new HomeML()
             {
                 Name = "Home",
                 Description = "Home details",
-                UserName = "TestName"
+                UserName = UserMSID
             };
 
             return Ok(home);

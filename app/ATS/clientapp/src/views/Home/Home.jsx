@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PrimaryLayout from 'components/Layout/PrimaryLayout';
 import HomeAPI from 'services/apis/HomeAPI';
+var htmlContent = require('./Home.html');
 
 export default function Home() {
     const [HomeData, setHomeData] = useState([]);
@@ -15,13 +16,10 @@ export default function Home() {
     return (
         <>
             <PrimaryLayout title="Home Page">
-                <h1>
-                    Home Page
-                </h1>
-                <p>{HomeData.name}</p>
-                <p>{HomeData.description}</p>
-                <p>{HomeData.userName}</p>
+                <p>UserName = {HomeData.userName}</p>
+                <div key={Math.random()} dangerouslySetInnerHTML={{ __html: htmlContent }} />
             </PrimaryLayout>
         </>
     );
 };
+

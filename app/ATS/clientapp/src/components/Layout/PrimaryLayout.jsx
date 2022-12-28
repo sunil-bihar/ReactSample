@@ -10,7 +10,9 @@ export default function PrimaryLayout(props) {
     return (
         <>
             <PrimaryHeader />
+            <hr />
             <main>{props.children}</main>
+            <hr />
             <PrimaryFooter />
         </>
     )

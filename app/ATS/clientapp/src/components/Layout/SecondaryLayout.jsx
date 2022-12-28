@@ -10,7 +10,9 @@ export default function SecondaryLayout(props) {
     return (
         <>
             <SecondaryHeader />
+            <hr />
             <main>{props.children}</main>
+            <hr />
             <SecondaryFooter />
         </>
     );
