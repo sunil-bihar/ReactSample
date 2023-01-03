@@ -1,14 +1,20 @@
-import React from 'react';
-import LoginLayout from 'components/Layout/LoginLayout';
+import React from "react";
+import { Link } from "react-router-dom";
+import LoginLayout from "components/Layout/LoginLayout";
+
 
 export default function Login() {
-    return (
-        <>
-            <LoginLayout title="Login Page">
-                <h1>
-                    Login Page
-                </h1>
-            </LoginLayout>
-        </>
-    );
-};
+  return (
+    <>
+      <LoginLayout title="Login Page">
+      <div className="container-fluid main-header">
+      
+      <i className='fa fa-spinner fa-spin fa-pulse fa-3x'></i>
+        <h1>
+          Login Page
+        <i className="fa fa-spinner fa-spin"><Link to="/home">Go To Home</Link></i> </h1>
+        </div>
+      </LoginLayout>
+    </>
+  );
+}
